@@ -1,0 +1,32 @@
+{
+  "name": "mindseye-gemini-orchestrator",
+  "version": "0.1.0",
+  "description": "Orchestrator that runs MindsEye prompts from a Google Sheets ledger through Gemini and logs results back.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx ts-node src/index.ts",
+    "run-node": "npx ts-node scripts/run_node.ts",
+    "lint": "echo \"no lint configured yet\""
+  },
+  "keywords": [
+    "gemini",
+    "google-ai",
+    "mindseye",
+    "google-sheets-api",
+    "prompt-orchestration",
+    "ai"
+  ],
+  "author": "Peace Thabiwa",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "googleapis": "^127.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  }
+}
